@@ -15,7 +15,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") return res.status(405).end();
 
   const apiKey = req.headers["x-api-key"];
-  const SECRET = "super_secret_optional_key";
+  const SECRET = "848JF18398190DKOIAMNKSFJNANJWEJIKWAKWOLDKWAKP";
 
   // Optional: verify API key
   if (SECRET && apiKey !== SECRET) {
